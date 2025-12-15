@@ -7,11 +7,8 @@
 
 A curated collection of production-tested prompt engineering patterns for **healthcare agentic AI systems**, with a focus on **safety, accuracy, and regulatory compliance**. Built from real-world experience deploying AI systems for prior authorization, clinical decision support, and medical document processing.
 
-<p align="center">
-  <img src="docs/assets/architecture-overview.png" alt="Multi-Agent Architecture" width="800">
-</p>
 
-## 🎯 What This Repository Offers
+🎯 What This Repository Offers
 
 | Category | Description |
 |----------|-------------|
@@ -21,7 +18,7 @@ A curated collection of production-tested prompt engineering patterns for **heal
 | **Decision Support** | Frameworks for evidence-based clinical reasoning with audit trails |
 | **Quality Assurance** | Critic agents, validation patterns, and compliance monitoring |
 
-## 🏥 Healthcare-Specific Focus
+🏥 Healthcare-Specific Focus
 
 Unlike general-purpose prompt collections, this repository addresses the unique challenges of healthcare AI:
 
@@ -31,7 +28,7 @@ Unlike general-purpose prompt collections, this repository addresses the unique 
 - **Explainability**: Complete reasoning chains for clinical and legal review
 - **Human-in-the-Loop**: Appropriate escalation to clinical reviewers
 
-## 📁 Repository Structure
+ 📁 Repository Structure
 
 ```
 healthcare-agentic-prompts/
@@ -101,16 +98,16 @@ healthcare-agentic-prompts/
 └── LICENSE                           # MIT License
 ```
 
-## 🚀 Quick Start
+🚀 Quick Start
 
-### 1. Clone the Repository
+ 1. Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/healthcare-agentic-prompts.git
 cd healthcare-agentic-prompts
 ```
 
-### 2. Explore the Orchestrator
+ 2. Explore the Orchestrator
 
 Start with the Prior Authorization Orchestrator to understand the multi-agent pattern:
 
@@ -118,7 +115,7 @@ Start with the Prior Authorization Orchestrator to understand the multi-agent pa
 cat orchestrators/prior-auth-orchestrator/ORCHESTRATOR.md
 ```
 
-### 3. Use Individual Agents
+ 3. Use Individual Agents
 
 Each agent can be used standalone or as part of an orchestrated pipeline:
 
@@ -143,13 +140,13 @@ response = client.messages.create(
 )
 ```
 
-### 4. Implement the Full Pipeline
+ 4. Implement the Full Pipeline
 
 See the [Getting Started Guide](docs/getting-started.md) for implementing the complete multi-agent system.
 
-## 🏗️ Architecture Overview
+ 🏗️ Architecture Overview
 
-### Multi-Agent Pipeline
+Multi-Agent Pipeline
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -183,7 +180,7 @@ See the [Getting Started Guide](docs/getting-started.md) for implementing the co
 └───────────────┘           └───────────────┘           └───────────────┘
 ```
 
-### Agent Categories
+ Agent Categories
 
 | Category | Agents | Purpose |
 |----------|--------|---------|
@@ -193,11 +190,11 @@ See the [Getting Started Guide](docs/getting-started.md) for implementing the co
 | **Routing** | RTE-1 to RTE-5 | Confidence-based workflow routing |
 | **QA** | QA-1 to QA-4 | Continuous quality monitoring |
 
-## 🛡️ Safety Principles
+🛡️ Safety Principles
 
 This repository embeds healthcare AI safety principles throughout:
 
-### 1. No Hallucinations Allowed
+ 1. No Hallucinations Allowed
 ```markdown
 ## Critical Safety Rules
 - NEVER fabricate clinical information not present in source documents
@@ -205,7 +202,7 @@ This repository embeds healthcare AI safety principles throughout:
 - Flag uncertainty explicitly with confidence scores
 ```
 
-### 2. Conservative Escalation
+ 2. Conservative Escalation
 ```markdown
 ## Confidence Routing
 - ≥ 0.95: Auto-processing eligible
@@ -214,7 +211,7 @@ This repository embeds healthcare AI safety principles throughout:
 - Any hallucination: BLOCK auto-processing
 ```
 
-### 3. Complete Audit Trails
+ 3. Complete Audit Trails
 ```markdown
 ## Audit Requirements
 - Every decision must trace to source evidence
@@ -222,7 +219,7 @@ This repository embeds healthcare AI safety principles throughout:
 - Document hashes preserved for verification
 ```
 
-## 📊 Evaluation Framework
+ 📊 Evaluation Framework
 
 Each agent includes evaluation criteria:
 
@@ -235,11 +232,11 @@ Each agent includes evaluation criteria:
 
 See [evaluation/evaluation-framework.md](evaluation/evaluation-framework.md) for detailed testing methodology.
 
-## 🤝 Contributing
+ 🤝 Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-### Areas for Contribution
+ Areas for Contribution
 
 - [ ] Additional specialty-specific extraction agents (oncology, cardiology, etc.)
 - [ ] Alternative LLM provider implementations
@@ -247,22 +244,22 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 - [ ] Translations for non-English clinical documentation
 - [ ] Integration examples with EHR systems
 
-## 📚 Related Resources
+ 📚 Related Resources
 
-### Research Papers
+ Research Papers
 - [AgentClinic: Multimodal Agent Benchmark for Clinical Environments](https://agentclinic.github.io/)
 - [MDAgents: Adaptive Collaboration of LLMs for Medical Decision-Making](https://arxiv.org/abs/2404.15155)
 
-### Related Repositories
+ Related Repositories
 - [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) - General AI system prompts
 - [agentic-system-prompts](https://github.com/tallesborges/agentic-system-prompts) - Coding agent prompts
 - [MedLLMsPracticalGuide](https://github.com/AI-in-Health/MedLLMsPracticalGuide) - Medical LLM resources
 
-## 📄 License
+ 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚠️ Disclaimer
+⚠️ Disclaimer
 
 **This repository is for research and educational purposes only.**
 
@@ -271,12 +268,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - They should NOT be used for actual patient care decisions without proper clinical validation and regulatory approval
 - Always consult qualified healthcare professionals for medical decisions
 
-## 📬 Contact
+ 📬 Contact
 
-- **Author**: [Your Name]
-- **Email**: [your.email@example.com]
-- **LinkedIn**: [Your LinkedIn]
-- **Twitter**: [@yourhandle]
+- **Author**: Alaa Youssef
+- **Email**: alaayoussef92@gmail.com
+- **LinkedIn**: linkedin.com/in/alaa-youssef-5a610068
+- **Twitter**:  @Alaa_Youssef92
 
 ---
 
