@@ -275,10 +275,3 @@ This agent runs in parallel with:
 - EXT-C2 (Treatment History Extractor)
 - EXT-C3 (Diagnostic Results Extractor)
 
-## Version History
-
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0.0 | 2024-01-15 | Initial release |
-| 1.1.0 | 2024-03-01 | Added step therapy extraction |
-| 1.2.0 | 2024-06-15 | Enhanced confidence scoring |
