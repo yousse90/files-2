@@ -1,20 +1,20 @@
-# GitHub Repository Setup Guide
+ GitHub Repository Setup Guide
 
 This guide walks you through setting up the Healthcare Agentic Prompts repository on GitHub.
 
-## Step 1: Create the Repository on GitHub
+Step 1: Create the Repository on GitHub
 
-### Option A: GitHub Web Interface
+ Option A: GitHub Web Interface
 
 1. Go to [github.com/new](https://github.com/new)
 2. Fill in the details:
    - **Repository name**: `healthcare-agentic-prompts`
    - **Description**: `Production-tested prompt engineering patterns for healthcare agentic AI systems with focus on safety, accuracy, and regulatory compliance`
-   - **Visibility**: Public (recommended for portfolio) or Private
+   - **Visibility**: Public 
    - **DO NOT** initialize with README, .gitignore, or license (we have these)
 3. Click **Create repository**
 
-### Option B: GitHub CLI
+Option B: GitHub CLI
 
 ```bash
 # Install GitHub CLI if needed: https://cli.github.com/
@@ -25,7 +25,7 @@ gh repo create healthcare-agentic-prompts \
   --remote=origin
 ```
 
-## Step 2: Initialize Local Repository
+ Step 2: Initialize Local Repository
 
 ```bash
 # Navigate to your local folder
@@ -47,7 +47,7 @@ git commit -m "Initial commit: Healthcare Agentic AI Prompts
 - Confidence-based routing and quality gates"
 ```
 
-## Step 3: Connect to GitHub
+ Step 3: Connect to GitHub
 
 ```bash
 # Add GitHub as remote (replace YOUR_USERNAME)
@@ -58,22 +58,22 @@ git branch -M main
 git push -u origin main
 ```
 
-## Step 4: Configure Repository Settings
+Step 4: Configure Repository Settings
 
-### On GitHub, go to Settings and configure:
+On GitHub, go to Settings and configure:
 
-#### General Settings
+ General Settings
 - **Default branch**: `main`
 - **Features**: Enable Issues, Discussions
 - **Pull Requests**: Require pull request reviews
 
-#### Branch Protection (Settings → Branches → Add rule)
+ Branch Protection (Settings → Branches → Add rule)
 - **Branch name pattern**: `main`
 - **Require pull request reviews**: Yes
 - **Require status checks**: (when you add CI)
 - **Include administrators**: Yes
 
-#### Topics (Repository home → About → Edit)
+Topics (Repository home → About → Edit)
 Add these topics for discoverability:
 ```
 healthcare-ai
@@ -88,7 +88,7 @@ healthcare
 medical-ai
 ```
 
-## Step 5: Add GitHub Actions (Optional but Recommended)
+ Step 5: Add GitHub Actions (Optional but Recommended)
 
 Create `.github/workflows/validate.yml`:
 
@@ -158,7 +158,7 @@ Create `.github/markdown-link-check-config.json`:
 }
 ```
 
-## Step 6: Create First Release
+Step 6: Create First Release
 
 ```bash
 # Tag the release
@@ -181,15 +181,15 @@ Then on GitHub:
 4. Description: Copy from CHANGELOG.md
 5. Click **Publish release**
 
-## Step 7: Promote Your Repository
+Step 7: Promote Your Repository
 
-### Add to Your Profiles
+Add to Your Profiles
 
 1. **GitHub Profile README**: Add to your pinned repositories
 2. **LinkedIn**: Share the launch post
 3. **Twitter/X**: Announce with relevant hashtags
 
-### Suggested LinkedIn Post
+Suggested LinkedIn Post
 
 ```
 🏥 Excited to open-source my Healthcare Agentic AI Prompts repository!
@@ -218,7 +218,7 @@ Link: github.com/YOUR_USERNAME/healthcare-agentic-prompts
 #HealthcareAI #AgenticAI #PromptEngineering #AIEthics #OpenSource
 ```
 
-### Suggested Twitter Post
+ Suggested Twitter Post
 
 ```
 🚀 Open-sourcing my Healthcare Agentic AI Prompts
@@ -234,7 +234,7 @@ github.com/YOUR_USERNAME/healthcare-agentic-prompts
 #AI #Healthcare #LLM #PromptEngineering
 ```
 
-## File Checklist
+File Checklist
 
 Before pushing, verify you have:
 
@@ -251,9 +251,9 @@ Before pushing, verify you have:
 - [x] docs/getting-started.md
 - [x] docs/architecture.md
 
-## Troubleshooting
+ Troubleshooting
 
-### "Permission denied" on push
+ "Permission denied" on push
 ```bash
 # Check your remote URL
 git remote -v
@@ -262,7 +262,7 @@ git remote -v
 # Generate at: GitHub → Settings → Developer settings → Personal access tokens
 ```
 
-### Large files rejected
+ Large files rejected
 ```bash
 # If you have large files, use Git LFS
 git lfs install
@@ -270,7 +270,7 @@ git lfs track "*.pdf"
 git add .gitattributes
 ```
 
-### Accidental PHI commit
+Accidental PHI commit
 ```bash
 # IMMEDIATELY remove from history
 git filter-branch --force --index-filter \
@@ -285,4 +285,3 @@ git push origin --force --all
 
 ---
 
-Good luck with your repository! 🚀
