@@ -1,4 +1,4 @@
-# Agent: DEC-5 - Critic Agent
+# Agent: - Critic Agent
 
 ## Overview
 
